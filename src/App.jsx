@@ -57,7 +57,7 @@ function App() {
     if (isNaN(numero)) { alert("O valor precisa ser um número.");
       return;
     }
-    if (numero < 0) { alert("O valor não pode ser negativo.");
+    if (numero <= 0) { alert("O valor não pode ser negativo.");
       return;
     }
 
@@ -101,38 +101,35 @@ function App() {
   for (let i = 0; i < Aguardando.length; i++) {
     valorAberto = valorAberto + Aguardando[i].nuValor;
   } //for é o ideal nesse caso
-
   return (
     <div className="oficina">
       <h1>Oficina de Bicicletas</h1>
-
       <div className="resumo">
         <p>Total de ordens: {todas}</p>
         <p>Ordens em aberto: {quantiaAberta}</p>
-        <p>Valor em aberto: R$ {valorAberto.toFixed(2)}</p>
+        <p>valor em aberto: R$ {valorAberto.toFixed(2)}</p>
       </div>
 
       <form
-        onSubmit={(eventos) => {
-          eventos.preventDefault();
+        onSubmit={(eventos) => { eventos.preventDefault();
           adicionar();
         }}
       >
         <input campos dos inputees
             type="text"
-            placeholder="Cliente"
+            placeholder="cliente"
             value={cliente}
             onChange={(eventos) => setCliente(eventos.target.value)}
         />
         <input
             type="text"
-            placeholder="Serviço"
+            placeholder="servico"
             value={servico}
             onChange={(eventos) => setServico(eventos.target.value)}
         />
         <input
             type="text"
-            placeholder="Valor"
+            placeholder="valor"
             value={valor}
             onChange={(eventos) => setValor(eventos.target.value)}
         />
@@ -140,7 +137,7 @@ function App() {
       </form>
       {erro !== "" && <p className="erro">{erro}</p>}
       {ordens.length === 0 && (
-        <p className="vazio">Não sobrou nada.</p>
+        <p className="vazio">Não sobrou nada...</p>
       )}
       <ul>
         {ordens.map((ordem) => ( //map para varer todas as coisas listadas
