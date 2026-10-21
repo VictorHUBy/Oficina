@@ -57,7 +57,7 @@ function App() {
     if (isNaN(numero)) { alert("O valor precisa ser um número.");
       return;
     }
-    if (numero <= 0) { alert("O valor não pode ser negativo.");
+    if (numero <= 0) { alert("O valor precisa ser maior que zero.");
       return;
     }
 
@@ -115,7 +115,7 @@ function App() {
           adicionar();
         }}
       >
-        <input campos dos inputees
+        <input
             type="text"
             placeholder="cliente"
             value={cliente}
