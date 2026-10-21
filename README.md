@@ -1,16 +1,56 @@
-# React + Vite
+# Oficina de Bicicletas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação de estudo feita com React para organizar ordens de serviço de uma oficina de bicicletas.
 
-Currently, two official plugins are available:
+## O que faz
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Cadastra uma ordem com nome do cliente, serviço e valor.
+- Valida os campos antes de cadastrar.
+- Permite marcar uma ordem como concluída ou reabri-la.
+- Permite remover ordens.
+- Exibe o total de ordens, quantas estão em aberto e a soma dos valores pendentes.
 
-## React Compiler
+## Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
 
-## Expanding the ESLint configuration
+## Como executar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+É necessário ter Node.js e npm instalados.
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/VictorHUBy/Oficina.git
+   cd Oficina
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Abra no navegador o endereço informado pelo Vite no terminal.
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+## Estado dos dados
+
+Por enquanto, as ordens ficam em memória no estado do React. Elas não são salvas em banco de dados e são perdidas ao recarregar a página.
+
+## Objetivo de aprendizado
+
+O projeto serve para praticar componentes, estado, formulários, validação de entradas, listas e atualização de dados em React.
