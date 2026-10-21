@@ -7,22 +7,22 @@ function App() {
     {
       idOrdem: crypto.randomUUID(),
       dsCliente: "Angelo Hank",
-      dsServico: "Troca de pastilhas de freio",
-      nuValor: 85,
+      dsServico: "Aeronave",
+      nuValor: 13,
       ordFinalizad: false,
     },
     {
       idOrdem: crypto.randomUUID(),
       dsCliente: "Gustavo Slivoskie",
-      dsServico: "Regulagem de câmbio",
-      nuValor: 60,
+      dsServico: "Farmador",
+      nuValor: 67,
       ordFinalizad: true,
     },
     {
       idOrdem: crypto.randomUUID(),
       dsCliente: "Henrique com",
-      dsServico: "Troca de pneu traseiro",
-      nuValor: 120.5, //valor para testar depois
+      dsServico: "Trocador marcha",
+      nuValor: 123.5, //valor para testar depois
       ordFinalizad: false,
     },
   ]);
@@ -82,10 +82,7 @@ function App() {
   // isso é CONCLUIR, apenas mudei o nome(reutilizar ele)
   function marcar(id) {
     setOrdens(
-      ordens.map((ordem) =>
-        ordem.idOrdem === id
-          ? { ...ordem, ordFinalizad: !ordem.ordFinalizad }
-          : ordem
+      ordens.map((ordem) => ordem.idOrdem === id ? { ...ordem, ordFinalizad: !ordem.ordFinalizad } : ordem
       )
     );
   }
