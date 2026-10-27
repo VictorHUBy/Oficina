@@ -1,56 +1,16 @@
-# Oficina de Bicicletas
+# Oficina
 
-Aplicação de estudo feita com React para organizar ordens de serviço de uma oficina de bicicletas.
+Aplicação de estudo com React que organiza ordens de serviço de uma oficina de bicicletas.
 
-## O que faz
-
-- Cadastra uma ordem com nome do cliente, serviço e valor.
-- Valida os campos antes de cadastrar.
-- Permite marcar uma ordem como concluída ou reabri-la.
-- Permite remover ordens.
-- Exibe o total de ordens, quantas estão em aberto e a soma dos valores pendentes.
+O app permite cadastrar uma ordem com nome do cliente, serviço e valor, marcar como concluída ou reabrir, remover ordens e exibe resumo de quantas estão abertas e o valor total em aberto.
 
 ## Tecnologias
-
-- React
-- JavaScript
+- React 18
 - Vite
 
-## Como executar
+## Como rodar
 
-É necessário ter Node.js e npm instalados.
+    npm install
+    npm run dev
 
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/VictorHUBy/Oficina.git
-   cd Oficina
-   ```
-
-2. Instale as dependências:
-
-   ```bash
-   npm install
-   ```
-
-3. Inicie o servidor de desenvolvimento:
-
-   ```bash
-   npm run dev
-   ```
-
-4. Abra no navegador o endereço informado pelo Vite no terminal.
-
-Para gerar a versão de produção:
-
-```bash
-npm run build
-```
-
-## Estado dos dados
-
-Por enquanto, as ordens ficam em memória no estado do React. Elas não são salvas em banco de dados e são perdidas ao recarregar a página.
-
-## Objetivo de aprendizado
-
-O projeto serve para praticar componentes, estado, formulários, validação de entradas, listas e atualização de dados em React.
+[ADICIONAR PRINT AQUI]
